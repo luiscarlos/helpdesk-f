@@ -28,7 +28,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 
 // Componentes do projeto
-// import { NavComponent } from './components/nav/nav.component';
+import { NavComponent } from './components/nav/nav.component';
 // import { HomeComponent } from './components/home/home.component';
 // import { HeaderComponent } from './components/header/header.component';
 // import { TecnicoListComponent } from './components/tecnico/tecnico-list/tecnico-list.component';
@@ -50,14 +50,16 @@ import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    MatTableModule
+    MatTableModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
