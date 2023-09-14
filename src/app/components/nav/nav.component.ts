@@ -1,18 +1,22 @@
 import { Component, OnInit } from '@angular/core';
-import { Route } from '@angular/router';
+import {  Router } from '@angular/router';
+
+
 
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.component.html',
   styleUrls: ['./nav.component.css']
 })
-export class NavComponent implements OnInit{
+export class NavComponent implements OnInit {
 
-  constructor(){}
+  constructor(
+    private router: Router,
+  ) { }
 
-  
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    this.router.navigate(['home'])
   }
 
+  
 }
