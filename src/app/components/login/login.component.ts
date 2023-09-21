@@ -3,6 +3,7 @@ import { FormControl, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { Credenciais } from 'src/app/models/credencias';
+
 import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
@@ -19,15 +20,11 @@ export class LoginComponent implements OnInit {
 
   email = new FormControl(null, Validators.email);
   senha = new FormControl(null, Validators.minLength(3));
-  router: any;
 
   constructor(
     private toast: ToastrService,
     private service: AuthService,
-    
-   
-   
-    ) { }
+    private router: Router) { }
 
   ngOnInit(): void { }
 
@@ -45,4 +42,3 @@ export class LoginComponent implements OnInit {
   }
 
 }
-

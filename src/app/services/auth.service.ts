@@ -10,6 +10,7 @@ import { JwtHelperService } from '@auth0/angular-jwt';
   providedIn: 'root'
 })
 export class AuthService {
+  [x: string]: any;
 
   jwtService: JwtHelperService = new JwtHelperService();
 
@@ -34,5 +35,7 @@ export class AuthService {
     return false
   }
 
-
+  logout() {
+    localStorage.clear();
+  }
 }
