@@ -13,7 +13,7 @@ import {MatTableModule} from  '@angular/material/table' ;
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 
 // Para realizar requisições HTTP
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 // Imports para componentes do Angular Material
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -97,4 +97,4 @@ import { AuthInterceptorProvider } from './interceptors/auth.interceptor';
   providers: [AuthInterceptorProvider],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { private http: HttpClient}
