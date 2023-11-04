@@ -9,6 +9,7 @@ import {MatTableModule} from  '@angular/material/table' ;
 
 
 
+
 // Para trabalhar com formulários no Angular 12
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 
@@ -99,4 +100,4 @@ import { TecnicoCreateComponent } from './components/tecnico/tecnico-create/tecn
   providers: [AuthInterceptorProvider],
   bootstrap: [AppComponent]
 })
-export class AppModule { private http: HttpClient}
+export class AppModule {}
